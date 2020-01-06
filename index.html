@@ -1,0 +1,887 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/rangeslider.css">
+    <link rel="stylesheet" type="text/css" href="css/calc.css">
+</head>
+<body>
+  <div id="result_form">
+  </div>
+  <section class="content" >
+    <div class="calc_nav_place"></div>
+    <section class="calc_top_wrap">
+        <div class="container">
+            <div class="calc_top">
+                <a href="" class="c-add_window">
+                    <span>Добавить новое окно (<span class='count_window'>1</span>)</span>
+                </a>
+                <div class="cart_items" id="totalId-1">
+                    <a class="main_a" href="">
+                        <div class="img">
+                            <img src="images/calc_img/for_calc_okno_gl_one (2).png">
+                        </div>
+                        <div class="text">
+                            <div class="name"><span class="c-title_order" data-type="0">Одностворчатое окно поворотное</span> профиль <span class="c-complect" data-type="0">Basic</span> размер <span class="c-size_h">800</span>*<span class="c-size_w">1200</span></div>
+                            <a></a>
+                            <input class="c-size_w1" type="hidden" value="">
+                            <input class="c-size_w2" type="hidden" value="">
+                            <input class="sill_data" type="hidden" value="" name="Подоконник">
+                            <input class="otl_data" type="hidden" value="" name="Отлив">
+                            <input class="moscit_data" type="hidden" value="0" name="Москитная сетка">
+                            <input class="dostavka_data" type="hidden" value="0" name="Доставка">
+                            <input class="zamok_data" type="hidden" value="0" name="Детский замок">
+                            <input class="montaz_data" type="hidden" value="0" name="Монтаж">
+                        </div>
+                        <div class="item_price">
+                            <p class="title">Стоимость</p>
+                            <div><span class="c-price">1000</span> грн.</div>
+                        </div>
+                    </a>
+                </div>
+                <a href="" class="to_order_btn c-toBasket">
+                    <b>Оформить заказ</b>
+                    <div>Сумма заказа: <span class="all_price">4460,00</span> грн</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="calc_page">
+      <form id="ajax_form" method="get">
+        <input type="hidden" name="window_type" id='window_type_inp' placeholder="Тип окна(ID)" value="1">
+        <div class="container">
+            <div class="calc_title">
+                Шаг 1. Выберите тип и размер окна
+            </div>
+
+            <ul class="calc_nav">
+                <li class="active">
+                    <a href="">
+                        <span class="title">Одностворчатовое окно</span>
+                        <img src="images/calc_img/for_calc_okno_gl_one (2).png" id="img_select1">
+                    </a>
+                    <div class="hover_block">
+                        <a href="" class="active">
+                        <img src='images/calc_img/for_calc_okno_gl_one (2).png' data-type='0'>
+                        </a>
+                        <a href="">
+                            <img src='images/calc_img/for_calc_okno_po_one (2).png' data-type='1'>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="title">Двустворчатовое окно</span>
+                        <img src="images/calc_img/for_calc_okno_gl_two (2).png">
+                    </a>
+                    <div class="hover_block">
+                        <a href="">
+                            <img src="images/calc_img/for_calc_okno_gl_two (2).png" data-type='2'>
+                        </a>
+                        <a href="">
+                            <img src="images/calc_img/for_calc_okno_pol_two (2).png" data-type='3'>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="title">Трехстворчатовое окно</span>
+                        <img src="images/calc_img/for_calc_okno_gl_three (2).png">
+                    </a>
+                    <div class="hover_block">
+                        <a href="">
+                            <img src="images/calc_img/for_calc_okno_gl_three (2).png" data-type='4'>
+                        </a>
+                        <a href="">
+                            <img src="images/calc_img/for_calc_okno_po_three (2).png" data-type='5'>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="title">Балконный блок</span>
+                        <img src="images/calc_img/balkon_block.png">
+                    </a>
+                    <div class="hover_block">
+                        <a href="">
+                            <img src="images/calc_img/balkon_block.png" data-type='6'>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="title">Лоджия</span>
+                        <img src="images/calc_img/for_calc_okno_gl_four (2).png">
+                    </a>
+                    <div class="hover_block">
+                        <a href="">
+                            <img src="images/calc_img/for_calc_okno_gl_four (2).png" data-type='7'>
+                        </a>
+                        <!-- <a href="">
+                            <img src="images/calc_img/for_calc_okno_po_four (2).png" data-type='8'>
+                        </a> -->
+                    </div>
+                </li>
+            </ul>
+
+            <div class="">
+                <div class="windows_wrap">
+                    <!-- <div class="row"> -->
+                        <div class="c-calc-block-img">
+                            <div class="c-img-size">
+                                <img src="images/calc_img/for_calc_okno_gl_one (2).png" alt="окно">
+                            </div>
+                            <div class="c-w-size-vertical">
+                              <div class="c-block_input">
+                                <input id="output-h" class="c-w-size-input-text" value="450" type="text"><span>мм</span>
+                              </div>
+                              <input id="range-h" min="450" max="1500" step="10" value="450" type="range" data-orientation="vertical">
+                            </div>
+                            <div class="c-bottom-range">
+                              <div class="c-w-size-horizontal c-balkon-range">
+                                <div class="c-block_input">
+                                  <input id="output-w2" class="c-w-size-input-text" value="450" type="text"><span>мм</span> 
+                                </div>
+                                  <input id="range-w2" min="450" max="1500" step="10" value="450" type="range">
+                              </div>
+                              <div class="c-w-size-horizontal">
+                                <div class="c-block_input">
+                                  <input id="output-w" class="c-w-size-input-text" value="450" type="text"><span>мм</span>
+                                </div>
+                                <input id="range-w" min="450" max="1500" step="10" value="450" type="range">
+                              </div>
+                            </div>
+                          </div>
+                        <div class="options_parent">
+                            <div class="option_block">
+                                <div class="block_title">Доп. комплектация</div>
+                                <div class="item">
+                                    <p class="option_title">Ширина подоконника</p>
+                                    <select class="input-select c-select-sill" name="Подоконник">
+              <option value="" selected="true">Без подоконника</option>
+            </select>
+                                    <!-- <select name="sill" class="select2" id="">
+                                      <option>Без подоконника</option>
+                                          <?php
+              foreach ($sill as $key => $value) {
+                echo "<option name=".$key." value=".$value.">".$value."</option>";
+              }
+            ?>
+                                    </select> -->
+                                </div>
+                                <div class="item">
+                                    <p class="option_title">Ширина отлива</p>
+                                    <select class="input-select c-select-otl" name="Отлив">
+              <option value="" selected="true">Без отлива</option>
+            </select>
+            <!-- <select name="tide" class="select2">
+                                        <option>Без отлива</option>
+                                        <?php
+            foreach ($tide as $key => $value) {
+              echo "<option name=".$key." value=".$value.">".$value."</option>";
+            }
+          ?>
+                                    </select> -->
+                                </div>
+                            </div>
+                            <div class="bottom_option-parent">
+                                    <div class="option_block">
+                                        <div class="block_title">Опции</div>
+                                        <div class="">
+                                            <div class="c-radio-wrapper">
+            <input type="checkbox" name="complect" id="radio2">
+            <label for="radio2">Детский замок</label>
+          </div>
+                                            <!-- <div class="checkbox_block">
+                                                <input type="checkbox" name="" id="ch1">
+                                                <label for="ch1">Детский замок <span>+160 грн</span></label>
+                                            </div> -->
+                                        </div>
+                                        <div class="">
+                                            <div class="c-radio-wrapper">
+            <input type="checkbox" name="services" id="check-delivery">
+            <label for="check-delivery">Доставка (по Киеву)</label>
+          </div>
+                                            <!-- <div class="checkbox_block">
+                                                <input type="checkbox" name="" id="ch2">
+                                                <label for="ch2">Детский замок <span>+320 грн</span></label>
+                                            </div> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="option_block">
+                                        <div class="block_title">Услуги</div>
+                                        <div class="">
+                                            <div class="c-radio-wrapper" id="moscit">
+            <input type="checkbox" name="complect" id="radio1">
+            <label for="radio1">Москитная сетка</label>
+          </div>
+                                            <!-- <div class="checkbox_block">
+                                                <input type="checkbox" name="mosquit_trap" value="1" id="ch3">
+                                                <label for="ch3">Москитная сетка</label>
+                                            </div> -->
+                                        </div>
+                                        <div class="">
+                                            <div class="c-radio-wrapper">
+            <input type="checkbox" name="services" id="check-montage">
+            <label for="check-montage">Монтаж (по Киеву</label>
+          </div>
+                                            <!-- <div class="checkbox_block">
+                                                <input type="checkbox" name="installation" value="1" id="ch4">
+                                                <label for="ch4">Монтаж</label>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calc_title">
+                Шаг 2. Выберите свое окно
+
+<input id="packet_inp" type="hidden" name="type" value="0">
+
+
+            </div>
+            <div class="windiw_variants">
+                <ul class="nav nav-tabs">
+                    <li class="active li_packet" data-type="0">
+                        <a data-toggle="tab" href="#window_tab1">
+                            <input id="window_1" type="radio" name="type_1" value="1">
+                            <label for="window_1">
+                                <img src="images/calc_img/win_brend001.png">
+                                <div class="radio_block">
+                                    <span class="radio_img"></span>
+                                    <span class="title">Basic</span>
+                                </div>
+                            </label>
+                        </a>
+                    </li>
+                    <li class="li_packet" data-type="1">
+                        <a data-toggle="tab" href="#window_tab2">
+                            <input id="window_2" type="radio" name="type_2" value="2">
+                            <label for="window_2">
+                                <img src="images/calc_img/win_brend001.png">
+                                <div class="radio_block">
+                                    <span class="radio_img"></span>
+                                    <span class="title">Standard</span>
+                                </div>
+                            </label>
+                        </a>
+                    </li>
+                    <li class="li_packet" data-type="2">
+                        <a data-toggle="tab" href="#window_tab3">
+                            <input id="window_3" type="radio" name="type_3" value="3">
+                            <label for="window_3">
+                                <img src="images/calc_img/win_brend001.png">
+                                <div class="radio_block">
+                                    <span class="radio_img"></span>
+                                    <span class="title">Optima</span>
+                                </div>
+                            </label>
+                        </a>
+                    </li>
+                    <li class="li_packet" data-type="3">
+                        <a data-toggle="tab" href="#window_tab4">
+                            <input id="window_4" type="radio" name="type_4" value="4">
+                            <label for="window_4">
+                                <img src="images/calc_img/win_brend001.png">
+                                <div class="radio_block">
+                                    <span class="radio_img"></span>
+                                    <span class="title">Premium</span>
+                                </div>
+                            </label>
+                        </a>
+                    </li>
+                    <!-- <li class="li_packet" data-typepe="5">
+                        <a data-toggle="tab" href="#window_tab5">
+                            <input id="window_5" type="radio" name="choose-window" value="">
+                            <label for="window_5">
+                                <img src="images/calc_img/win_brend001.png">
+                                <div class="radio_block">
+                                    <span class="radio_img"></span>
+                                    <span class="title">Design</span>
+                                </div>
+                            </label>
+                        </a>
+                    </li> -->
+                </ul>
+                <div class="c-tab-content">
+                    <div class="c-tab-pane active" id="window_tab1">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4">
+                                <div class="img_wrap">
+                                    <img src="images/calc_img/win_brend001_l.png">
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-8">
+                                <div class="prod_info">
+                                    <div class="title">Basic</div>
+                                    <div class="item teplo">
+                                        <div class="item_title">Теплоизоляция</div>
+                                        <div class="item_stat">
+                                            <div class="visual option1">
+                                                <div style="width: 45%;"></div>
+                                            </div>
+                                            <div class="value v1">45/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item sun">
+                                        <div class="item_title">Солнцезащита</div>
+                                        <div class="item_stat">
+                                            <div class="visual option2">
+                                                <div style="width: 30%;"></div>
+                                            </div>
+                                            <div class="value v2">30/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item shum">
+                                        <div class="item_title">Шумозащита</div>
+                                        <div class="item_stat">
+                                            <div class="visual option3">
+                                                <div style="width: 85%;"></div>
+                                            </div>
+                                            <div class="value v3">85/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item prot">
+                                        <div class="item_title">Безопасность</div>
+                                        <div class="item_stat">
+                                            <div class="visual option4">
+                                                <div style="width: 5%;"></div>
+                                            </div>
+                                            <div class="value v4">5/100</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-12 prod_other_info">
+                                <ul class="c-nav-tabs c-nav">
+                                    <li class="active">
+                                        <a href="#char1">Тех. характеристики</a>
+                                    </li>
+                                    <li>
+                                        <a href="#descr1">Описание</a>
+                                    </li>
+                                </ul>
+                                <div class="c-tab-content">
+                                    <div class="c-tab-pane-s active" id="char1">
+                                        <div class="char_block">
+                                            <div class="row">
+                                                <div class="col-sm-6">Профиль</div>
+                                                <div class="col-sm-6" id="profil1">WDS Classic Украина</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Класс</div>
+                                                <div class="col-sm-6" id="class1">B</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Cтеклопакет</div>
+                                                <div class="col-sm-6" id="steklo1">3 камеры, ширина 60мм</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Энергосбережения</div>
+                                                <div class="col-sm-6" id="energo1">0,43</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Солнцезащита</div>
+                                                <div class="col-sm-6" id="sun1">0,35</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Звукоизоляция</div>
+                                                <div class="col-sm-6" id="zvuk1">27дБа</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-tab-pane-s" id="descr1">
+                                        <div class="descr_block" id="opis1">
+                                            <p>Днепровский завод «Miroplast» создает профильные системы с учетом
+                                                особенностей климата нашей страны, поэтому WDSClassic с легкостью может
+                                                защитить пространство от непогоды, холода и шума. Трехкамерная
+                                                профильная система с монтажной шириной 60 мм, позволяет устанавливать,
+                                                как однокамерные, так и двухкамерные стеклопакеты толщиной до 32 мм.
+                                                Подходит для остекления как офисных, так и для жилых помещений.</p>
+                                            <p>Если использовать эту систему для остекления квартир, рекомендуем
+                                                выбирать стеклопакеты с энергонапылением.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-tab-pane" id="window_tab2">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4">
+                                <div class="img_wrap">
+                                    <img src="images/calc_img/win_brend001_l.png">
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-8">
+                                <div class="prod_info">
+                                    <div class="title">Standard</div>
+                                    <div class="item teplo">
+                                        <div class="item_title">Теплоизоляция</div>
+                                        <div class="item_stat">
+                                            <div class="visual option1">
+                                                <div style="width: 45%;"></div>
+                                            </div>
+                                            <div class="value v1">45/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item sun">
+                                        <div class="item_title">Солнцезащита</div>
+                                        <div class="item_stat">
+                                            <div class="visual option2">
+                                                <div style="width: 30%;"></div>
+                                            </div>
+                                            <div class="value v2">30/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item shum">
+                                        <div class="item_title">Шумозащита</div>
+                                        <div class="item_stat">
+                                            <div class="visual option3">
+                                                <div style="width: 85%;"></div>
+                                            </div>
+                                            <div class="value v3">85/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item prot">
+                                        <div class="item_title">Безопасность</div>
+                                        <div class="item_stat">
+                                            <div class="visual option4">
+                                                <div style="width: 5%;"></div>
+                                            </div>
+                                            <div class="value v4">5/100</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-12 prod_other_info">
+                                <ul class="c-nav-tabs c-nav">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#char2">Тех. характеристики</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#descr2">Описание</a>
+                                    </li>
+                                </ul>
+                                <div class="c-tab-content">
+                                    <div class="c-tab-pane-s active" id="char2">
+                                        <div class="char_block">
+                                            <div class="row">
+                                                <div class="col-sm-6">Профиль</div>
+                                                <div class="col-sm-6" id="profil2">WDS Classic Украина</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Класс</div>
+                                                <div class="col-sm-6" id="class2">B</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Cтеклопакет</div>
+                                                <div class="col-sm-6" id="steklo2">3 камеры, ширина 60мм</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Энергосбережения</div>
+                                                <div class="col-sm-6" id="energo2">0,43</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Солнцезащита</div>
+                                                <div class="col-sm-6" id="sun2">0,35</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Звукоизоляция</div>
+                                                <div class="col-sm-6" id="zvuk2">27дБа</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-tab-pane-s" id="descr2">
+                                        <div class="descr_block" id="opis2"> 
+                                            <p>Днепровский завод «Miroplast» создает профильные системы с учетом
+                                                особенностей климата нашей страны, поэтому WDSClassic с легкостью может
+                                                защитить пространство от непогоды, холода и шума. Трехкамерная
+                                                профильная система с монтажной шириной 60 мм, позволяет устанавливать,
+                                                как однокамерные, так и двухкамерные стеклопакеты толщиной до 32 мм.
+                                                Подходит для остекления как офисных, так и для жилых помещений.</p>
+                                            <p>Если использовать эту систему для остекления квартир, рекомендуем
+                                                выбирать стеклопакеты с энергонапылением.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-tab-pane" id="window_tab3">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4">
+                                <div class="img_wrap">
+                                    <img src="images/calc_img/win_brend001_l.png">
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-8">
+                                <div class="prod_info">
+                                    <div class="title">Optima</div>
+                                    <div class="item teplo">
+                                        <div class="item_title">Теплоизоляция</div>
+                                        <div class="item_stat">
+                                            <div class="visual option1">
+                                                <div style="width: 45%;" id="otizol1"></div>
+                                            </div>
+                                            <div class="value v1" id="vtizol1">45/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item sun">
+                                        <div class="item_title">Солнцезащита</div>
+                                        <div class="item_stat">
+                                            <div class="visual option2">
+                                                <div style="width: 30%;" id="osizol1"></div>
+                                            </div>
+                                            <div class="value v2" id="vsizol1">30/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item shum">
+                                        <div class="item_title">Шумозащита</div>
+                                        <div class="item_stat">
+                                            <div class="visual option3">
+                                                <div style="width: 85%;" id="oshizol1"></div>
+                                            </div>
+                                            <div class="value v3" id="vshizol1">85/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_title prot">Безопасность</div>
+                                        <div class="item_stat">
+                                            <div class="visual option4">
+                                                <div style="width: 5%;" id="oprotect1"></div>
+                                            </div>
+                                            <div class="value v4" id="vprotect1">5/100</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-12 prod_other_info">
+                                <ul class="c-nav-tabs c-nav">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#char3">Тех. характеристики</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#descr3">Описание</a>
+                                    </li>
+                                </ul>
+                                <div class="c-tab-content">
+                                    <div class="c-tab-pane-s active" id="char3">
+                                        <div class="char_block">
+                                            <div class="row">
+                                                <div class="col-sm-6">Профиль</div>
+                                                <div class="col-sm-6" id="profil3">WDS Classic Украина</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Класс</div>
+                                                <div class="col-sm-6" id="class3">B</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Cтеклопакет</div>
+                                                <div class="col-sm-6" id="steklo3">3 камеры, ширина 60мм</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Энергосбережения</div>
+                                                <div class="col-sm-6" id="energo3">0,43</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Солнцезащита</div>
+                                                <div class="col-sm-6" id="sun3">0,35</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Звукоизоляция</div>
+                                                <div class="col-sm-6" id="zvuk3">27дБа</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-tab-pane-s" id="descr3">
+                                        <div class="descr_block" id="opis3">
+                                            <p>Днепровский завод «Miroplast» создает профильные системы с учетом
+                                                особенностей климата нашей страны, поэтому WDSClassic с легкостью может
+                                                защитить пространство от непогоды, холода и шума. Трехкамерная
+                                                профильная система с монтажной шириной 60 мм, позволяет устанавливать,
+                                                как однокамерные, так и двухкамерные стеклопакеты толщиной до 32 мм.
+                                                Подходит для остекления как офисных, так и для жилых помещений.</p>
+                                            <p>Если использовать эту систему для остекления квартир, рекомендуем
+                                                выбирать стеклопакеты с энергонапылением.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-tab-pane" id="window_tab4">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4">
+                                <div class="img_wrap">
+                                    <img src="images/calc_img/win_brend001_l.png">
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-8">
+                                <div class="prod_info">
+                                    <div class="title">Premium</div>
+                                    <div class="item teplo">
+                                        <div class="item_title">Теплоизоляция</div>
+                                        <div class="item_stat">
+                                            <div class="visual option1">
+                                                <div style="width: 45%;"></div>
+                                            </div>
+                                            <div class="value v1">45/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item sun">
+                                        <div class="item_title">Солнцезащита</div>
+                                        <div class="item_stat">
+                                            <div class="visual option2">
+                                                <div style="width: 30%;"></div>
+                                            </div>
+                                            <div class="value v2">30/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item shum">
+                                        <div class="item_title">Шумозащита</div>
+                                        <div class="item_stat">
+                                            <div class="visual option3">
+                                                <div style="width: 85%;"></div>
+                                            </div>
+                                            <div class="value v3">85/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item prot">
+                                        <div class="item_title">Безопасность</div>
+                                        <div class="item_stat">
+                                            <div class="visual option4">
+                                                <div style="width: 5%;"></div>
+                                            </div>
+                                            <div class="value v4">5/100</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-12 prod_other_info">
+                                <ul class="c-nav-tabs c-nav">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#char4">Тех. характеристики</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#descr4">Описание</a>
+                                    </li>
+                                </ul>
+                                <div class="c-tab-content">
+                                    <div class="c-tab-pane-s active" id="char4">
+                                        <div class="char_block">
+                                            <div class="row">
+                                                <div class="col-sm-6">Профиль</div>
+                                                <div class="col-sm-6" id="profil4">WDS Classic Украина</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Класс</div>
+                                                <div class="col-sm-6" id="class4">B</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Cтеклопакет</div>
+                                                <div class="col-sm-6" id="steklo4">3 камеры, ширина 60мм</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Энергосбережения</div>
+                                                <div class="col-sm-6" id="energo4">0,43</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Солнцезащита</div>
+                                                <div class="col-sm-6" id="sun4">0,35</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Звукоизоляция</div>
+                                                <div class="col-sm-6" id="zvuk4">27дБа</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-tab-pane-s" id="descr4">
+                                        <div class="descr_block" id="opis4">
+                                            <p>Днепровский завод «Miroplast» создает профильные системы с учетом
+                                                особенностей климата нашей страны, поэтому WDSClassic с легкостью может
+                                                защитить пространство от непогоды, холода и шума. Трехкамерная
+                                                профильная система с монтажной шириной 60 мм, позволяет устанавливать,
+                                                как однокамерные, так и двухкамерные стеклопакеты толщиной до 32 мм.
+                                                Подходит для остекления как офисных, так и для жилых помещений.</p>
+                                            <p>Если использовать эту систему для остекления квартир, рекомендуем
+                                                выбирать стеклопакеты с энергонапылением.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-tab-pane" id="window_tab5">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4">
+                                <div class="img_wrap">
+                                    <img src="images/calc_img/win_brend001_l.png">
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-8">
+                                <div class="prod_info">
+                                    <div class="title">Design</div>
+                                    <div class="item teplo">
+                                        <div class="item_title">Теплоизоляция</div>
+                                        <div class="item_stat">
+                                            <div class="visual option1">
+                                                <div style="width: 45%;"></div>
+                                            </div>
+                                            <div class="value v1">45/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item sun">
+                                        <div class="item_title">Солнцезащита</div>
+                                        <div class="item_stat">
+                                            <div class="visual option2">
+                                                <div style="width: 30%;"></div>
+                                            </div>
+                                            <div class="value v2">30/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item shum">
+                                        <div class="item_title">Шумозащита</div>
+                                        <div class="item_stat">
+                                            <div class="visual option3">
+                                                <div style="width: 85%;"></div>
+                                            </div>
+                                            <div class="value v3">85/100</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_title prot">Безопасность</div>
+                                        <div class="item_stat">
+                                            <div class="visual option4">
+                                                <div style="width: 5%;"></div>
+                                            </div>
+                                            <div class="value v4">5/100</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-12 prod_other_info">
+                                <ul class="c-nav-tabs c-nav">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#char5">Тех. характеристики</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#descr5">Описание</a>
+                                    </li>
+                                </ul>
+                                <div class="c-tab-content">
+                                    <div class="c-tab-pane-s active" id="char5">
+                                        <div class="char_block">
+                                            <div class="row">
+                                                <div class="col-sm-6">Профиль</div>
+                                                <div class="col-sm-6" id="profil5">WDS Classic Украина</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Класс</div>
+                                                <div class="col-sm-6" id="class5">B</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Cтеклопакет</div>
+                                                <div class="col-sm-6" id="steklo5">3 камеры, ширина 60мм</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Энергосбережения</div>
+                                                <div class="col-sm-6" id="energo5">0,43</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Солнцезащита</div>
+                                                <div class="col-sm-6" id="sun5">0,35</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">Звукоизоляция</div>
+                                                <div class="col-sm-6" id="zvuk5">27дБа</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-tab-pane-s" id="descr5">
+                                        <div class="descr_block" id="opis5">
+                                            <p>Днепровский завод «Miroplast» создает профильные системы с учетом
+                                                особенностей климата нашей страны, поэтому WDSClassic с легкостью может
+                                                защитить пространство от непогоды, холода и шума. Трехкамерная
+                                                профильная система с монтажной шириной 60 мм, позволяет устанавливать,
+                                                как однокамерные, так и двухкамерные стеклопакеты толщиной до 32 мм.
+                                                Подходит для остекления как офисных, так и для жилых помещений.</p>
+                                            <p>Если использовать эту систему для остекления квартир, рекомендуем
+                                                выбирать стеклопакеты с энергонапылением.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 add_btn_wrap">
+                    <a href="#" class="c-add_window add_new">заказать <b>еще одно окно</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <!-- Модалка заказа окон -->
+    <div class="c-background-modal">
+        <div class="c-modal-order">
+            <div class="c-modal-close">x</div>
+            <h2 class="c-modal-title">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+    
+            <div class="c-modal-table-total">
+    
+            </div>
+    
+            <div class="c-modal-total">
+                <span>Итого:</span>
+                <div><span class="c-price-modal" id="modal-total-price">53 231</span> грн</div>
+            </div><!-- /c-modal-total -->
+    
+    
+            <div class="c-modal-form-block">
+                <h2 class="c-modal-title">ПОЖАЛУЙСТА, УКАЖИТЕ ЛИЧНЫЕ ДАННЫЕ</h2>
+                <form action="" class="c-modal-form">
+                    <input class="c-modal-input" type="text" name="name" placeholder="Имя">
+                    <input class="c-modal-input" type="tel" name="phone" placeholder="Телефон">
+                    <input class="c-modal-input" type="email" name="email" placeholder="Email">
+                    <textarea class="c-modal-input" style="min-height: 100px" name="coment"
+                        placeholder="Ваши пожелания / коментарии"></textarea>
+                    <button class="c-modal-btn">Оформить заказ</button>
+                </form>
+            </div><!-- c-modal-form-block -->
+    
+    
+        </div>
+    </div>
+    
+</section>
+<!-- <script src="calc/ajax.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="libs/rangeslider.min.js"></script>
+<!-- <script src="js/bootstrap.js"></script> -->
+<script src="js/calculator.js"></script>
+<!-- <script src="js/custom.js"></script> -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    
+</body>
+
+</html>
